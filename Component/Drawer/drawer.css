@@ -1,0 +1,39 @@
+.menu-drawer {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  transition: all 0.5s linear;
+  height: calc(100vh - 60px);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hide {
+  transition: all 0.5s linear;
+  opacity: 0;
+  display: none;
+}
+
+li > a {
+  /* font-weight: 600; */
+  font-size: 32px !important;
+}
+
+.nav-item {
+  width: 100% !important;
+}
+
+.nav-link {
+  /* width: 100% !important; */
+
+  color: rgb(145, 142, 142) !important;
+  transition: all 0.3s linear;
+}
+
+.active {
+  color: white !important;
+}
+.nav-link:hover {
+  color: white !important;
+  letter-spacing: 2px;
+}
