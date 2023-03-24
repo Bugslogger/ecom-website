@@ -1,18 +1,16 @@
-import ProductCard from "../../Component/Card/ProductCard";
 import Header from "../../Component/Header/Header";
+import Slides from "../../Component/ImageSlider/Slides";
+import HomePage from "../../Pages/Home";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="d-flex justify-content-center align-items-center flex-wrap py-4 body-content">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+      <div className="py-4 body-content">
+        <div className="image-banner border ">
+          <Slides />
+        </div>
+        <HomePage />
       </div>
     </>
   );

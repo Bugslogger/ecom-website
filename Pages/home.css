@@ -1,0 +1,17 @@
+.card-container{
+    width: calc(100% - 200px);
+}
+.side-container {
+  width: 250px;
+  /* flex: 1; */
+  margin: 10px;
+  height: 100vh;
+}
+
+.side-container-list{
+  margin: 10px 0;
+  width: 100%;
+}
+.list-group-item{
+    cursor: pointer;
+}
