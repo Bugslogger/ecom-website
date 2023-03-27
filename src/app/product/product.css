@@ -1,0 +1,147 @@
+.product-page {
+  height: calc(100vh - 65px);
+  margin: 65px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.product {
+  display: flex;
+}
+
+.product-image {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-details {
+  flex-basis: 50%;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px !important;
+  /* margin: 0 0 10px 0; */
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.price {
+  color: #333;
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+
+.buy-button {
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 8px auto;
+  padding: 15px 0 !important;
+  transition: background-color 0.3s ease;
+}
+
+/* .buy-button:hover {
+  background-color: #666;
+  transition: background-color 0.3s ease;
+} */
+
+.QuantitySelector {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(80, 80, 80, 0.5);
+  white-space: nowrap;
+  border-radius: 4px;
+}
+.QuantitySelector--large .QuantitySelector__Button {
+  padding: 6px 10px;
+}
+
+@media screen and (min-width: 641px) {
+  .QuantitySelector__Button {
+    padding: 6px 10px;
+  }
+}
+.QuantitySelector__Button {
+  display: inline-block;
+  padding: 5px 9px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.Link {
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.QuantitySelector--large .QuantitySelector__CurrentQuantity {
+  width: 35px;
+  font-size: calc(
+    var(--base-text-font-size) - (var(--default-text-font-size) - 14px)
+  );
+}
+@media screen and (min-width: 641px) {
+  .QuantitySelector__CurrentQuantity {
+    font-size: calc(
+      var(--base-text-font-size) - (var(--default-text-font-size) - 12px)
+    );
+  }
+}
+.QuantitySelector__CurrentQuantity {
+  display: inline-block;
+  width: 20px;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: normal;
+  background: transparent;
+  border: none;
+}
+input {
+  border: none;
+  line-height: normal;
+  border-radius: 0;
+}
+input:focus,
+input:focus-visible {
+  border: none;
+  outline: none;
+}
+img {
+  object-fit: cover;
+}
+.star {
+  font-size: 24px;
+}

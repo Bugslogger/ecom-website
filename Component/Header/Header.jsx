@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { createElement, useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { BiMenu } from "react-icons/bi";
 import "./header.css";
 import Drawer from "../Drawer/Drawer";
+import { ReactIcons } from "../../functions";
 
 export default function Header() {
   const [show, setshow] = useState(false);
@@ -54,20 +55,37 @@ export default function Header() {
   return (
     <header className="header d-flex justify-content-start align-items-center px-4">
       <div>
-        {!show ? (
-          <BiMenu
-            onClick={() => ToggleMenu(true)}
-            className="menu-icon text-white fs-3"
-          />
-        ) : (
-          <MdOutlineClose
-            onClick={() => ToggleMenu(false)}
-            className="menu-icon text-white fs-3"
-          />
-        )}
+        {
+          !show ? (
+            <span
+              onClick={() => ToggleMenu(true)}
+              className="menu-icon text-white fs-3"
+            >
+              {createElement(ReactIcons("BiMenu"))}
+            </span>
+          ) : (
+            // <BiMenu
+            //   onClick={() => ToggleMenu(true)}
+            //   className="menu-icon text-white fs-3"
+            // />
+            <span
+              onClick={() => ToggleMenu(false)}
+              className="menu-icon text-white fs-3"
+            >
+              {createElement(ReactIcons("MdOutlineClose"))}
+            </span>
+          )
+          // <MdOutlineClose
+          //   onClick={() => ToggleMenu(false)}
+          //   className="menu-icon text-white fs-3"
+          // />
+        }
       </div>
       <div className="text-white w-100 fw-bold text-center header-logo">
         Ecom
+      </div>
+      <div className="text-white fw-bold text-end fs-3">
+        {createElement(ReactIcons("MdOutlineShoppingCart"))}
       </div>
       <Drawer />
     </header>

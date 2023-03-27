@@ -5,9 +5,8 @@ import HomePage from "../../Pages/Home";
 export default function Home() {
   return (
     <>
-      <Header />
       <div className="py-4 body-content">
-        <div className="image-banner border ">
+        <div className="image-banner border shadow">
           <Slides />
         </div>
         <HomePage />

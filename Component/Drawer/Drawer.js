@@ -8,7 +8,7 @@ const Drawer = () => {
       <div className="w-100 h-100 d-flex justify-content-center align-items-center">
         <ul className="nav flex-column mb-5 w-100 text-center fw-bold">
           <li className="nav-item">
-            <Link className="nav-link" href="#">
+            <Link className="nav-link" href="/">
               Home
             </Link>
           </li>

@@ -1,17 +1,29 @@
-.card-container{
-    width: calc(100% - 200px);
+.card-container {
+  height: 100%;
+  width: calc(100% - 200px);
+  /* border: 1px solid; */
+  overflow-y: auto;
 }
 .side-container {
   width: 250px;
   /* flex: 1; */
-  margin: 10px;
+  margin: 25px;
   height: 100vh;
+  /* position: fixed; */
+  top: 65px;
 }
 
-.side-container-list{
+.side-container-list {
   margin: 10px 0;
   width: 100%;
 }
-.list-group-item{
-    cursor: pointer;
+.list-group-item {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 15px 10px;
+}
+
+.filter-btn {
+  font-size: 14px;
+  /* float: right; */
 }
