@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,11 +12,6 @@
   --white: #ffffff;
   --body-color: #f9fafb;
   --text-color: #020202;
-}
-
-@font-face {
-  font-family: camber;
-  src: url("/fonts/Camber.otf");
 }
 
 body {

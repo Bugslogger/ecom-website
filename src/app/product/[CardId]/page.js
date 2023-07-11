@@ -1,16 +1,17 @@
 "use client";
 import Image from "next/image";
-import React, { createElement } from "react";
-import Header from "../../../../Component/Header/Header";
+import React, { createElement, useState } from "react";
 import "../product.css";
-import ProductCard from "../../../../Component/Card/ProductCard";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import ProductCard from "../../../../Component/Card/ProductCard";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
-import { Autoplay } from "swiper";
+// import { Autoplay } from "swiper";
 import Accordian from "../../../../Component/Accordian/Accordian";
 import { ReactIcons } from "../../../../functions";
 
 const page = ({ params, searchParams }) => {
+  const [count, setcount] = useState(1);
+
   return (
     <div className="product-page py-5">
       <div className="product">
@@ -60,8 +61,7 @@ const page = ({ params, searchParams }) => {
                 className="QuantitySelector__CurrentQuantity"
                 pattern="[0-9]*"
                 name="quantity"
-                value="1"
-                aria-label="Quantity"
+                value={count}
               />
               <span
                 className="QuantitySelector__Button Link Link--secondary"

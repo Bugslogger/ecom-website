@@ -6,6 +6,7 @@ import { BiMenu } from "react-icons/bi";
 import "./header.css";
 import Drawer from "../Drawer/Drawer";
 import { ReactIcons } from "../../functions";
+import Link from "next/link";
 
 export default function Header() {
   const [show, setshow] = useState(false);
@@ -84,8 +85,12 @@ export default function Header() {
       <div className="text-white w-100 fw-bold text-center header-logo">
         Ecom
       </div>
-      <div className="text-white fw-bold text-end fs-3">
-        {createElement(ReactIcons("MdOutlineShoppingCart"))}
+      <div
+        className="text-white fw-bold text-end fs-3"
+      >
+        <Link href={"#"} style={{ cursor: "pointer", color: "#fff" }}>
+          {createElement(ReactIcons("MdOutlineShoppingCart"))}
+        </Link>
       </div>
       <Drawer />
     </header>
